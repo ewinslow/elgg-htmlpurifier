@@ -9,6 +9,7 @@ with other filtering tools.
 This plugin ships with the default configuration of HTMLPurifier.  If you'd like to customize
 this configuration in an upgrade-safe way, you can use the provided plugin hook like so:
 
+```php
 elgg_register_plugin_hook_handler('config', 'htmlpurifier', 'foo');
 
 function foo($hook, $type, $config) {
@@ -16,3 +17,4 @@ function foo($hook, $type, $config) {
 	
 	return $config;
 }
+```
