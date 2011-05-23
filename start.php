@@ -1,8 +1,6 @@
 <?php
 /**
- * Elgg htmLawed tag filtering.
- *
- * @package ElgghtmLawed
+ * Elgg HTML Purifier tag filtering.
  */
 
 /**
