@@ -40,10 +40,8 @@ function htmlpurifier_filter_tags($hook, $entity_type, $input, $params) {
 /**
  * wrapper function for htmlpurifier for handling arrays
  */
-function htmlpurifierArray(&$v, $k, HTMLPurifier &$purifier) {
+function htmlpurifierArray($v, $k, HTMLPurifier $purifier) {
 	$v = $purifier->purify($v);
 }
-
-
 
 elgg_register_event_handler('init', 'system', 'htmlpurifier_init');
