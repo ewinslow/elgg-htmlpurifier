@@ -17,7 +17,7 @@ function htmlpurifier_init() {
  * @return mixed
  */
 function htmlpurifier_filter_tags($hook, $entity_type, $input, $params) {
-	require_once dirname(__FILE__) . '/vendors/htmlpurifier-4.3.0-lite/library/HTMLPurifier.auto.php';
+	require_once dirname(__FILE__) . '/vendors/htmlpurifier-4.5.0-lite/library/HTMLPurifier.auto.php';
 	
 	$htmlpurifier_config = HTMLPurifier_Config::createDefault();
 	$htmlpurifier_config->set('HTML', 'Nofollow', true);
